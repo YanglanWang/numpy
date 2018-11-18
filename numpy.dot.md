@@ -46,7 +46,30 @@ Output:
 
 - If a is an N-D array and b is an M-D array (where M>=2), it is a sum product over the last axis of a and the second-to-last axis of b:
 ```
+import numpy as np
+a = np.arange(2*2*3).reshape((2,2,3))
+b = np.arange(2*3*2).reshape((2,3,2))
+c=np.dot(a,b)
+print(c)
+print(np.shape(c))
+```
+Output:
+```
+[[[[ 10  13]
+   [ 28  31]]
 
+  [[ 28  40]
+   [100 112]]]
+
+
+ [[[ 46  67]
+   [172 193]]
+
+  [[ 64  94]
+   [244 274]]]]
+(2, 2, 2, 2)
+
+```
 
 
 
