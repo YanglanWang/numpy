@@ -42,4 +42,12 @@ Output:
 [[  8  56 104]
  [152 200 248]]
 ```
+### In this case, b must be a 1*4 1-D array. If it doesn't have four elements, the multiplication can't accept by the system.
+
 - If a is an N-D array and b is an M-D array (where M>=2), it is a sum product over the last axis of a and the second-to-last axis of b:
+```
+
+
+
+
+
