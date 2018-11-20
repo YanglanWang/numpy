@@ -1,9 +1,10 @@
 # numpy.arange([start, ]stop, [step, ]dtype=None)
-## Return evenly spaced values within a given interval.
+Return evenly spaced values within a given interval. Values are generated within the half-open interval [start, stop)
 
-# For integer arguments the function is equivalent to the Python built-in range function, but returns an ndarray rather than a list.
+For integer arguments the function is equivalent to the Python built-in range function, 
+### but returns an ndarray rather than a list.
 
-# When using a non-integer step, such as 0.1, the results will often not be consistent. It is better to use linspace for these cases.
+#### When using a non-integer step, such as 0.1, the results will often not be consistent. It is better to use linspace for these cases.
 
 - start
 Start of interval. The interval includes this value. The default start value is 0.
